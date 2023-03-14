@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+
+import Background from './Screens/Background'
+import Buttons from './Screens/Buttons'
+import Checkbox from './Screens/Checkbox'
+import RadioButton from './Screens/RadioButton'
+import Search from './Screens/Search'
+import ToggleButton from './Screens/ToggleButton'
+import Textfield from './Screens/Textfield'
+import {
+  BrowserRouter, Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Background />} />
+        <Route exact path="/Buttons" element={<Buttons/>} />
+        <Route exact path="/Checkbox" element={<Checkbox/>} />
+        <Route exact path="/ToggleButton" element={<ToggleButton/>} />
+        <Route exact path="/RadioButton" element={<RadioButton/>} />
+        <Route exact path="/Textfield" element={<Textfield/>} />
+        <Route exact path="/Search" element={<Search/>} />
+      </Routes>
+    </BrowserRouter>
+  </>
   );
 }
 
