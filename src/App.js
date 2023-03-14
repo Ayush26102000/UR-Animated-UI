@@ -8,10 +8,12 @@ import RadioButton from './Screens/RadioButton'
 import Search from './Screens/Search'
 import ToggleButton from './Screens/ToggleButton'
 import Textfield from './Screens/Textfield'
+import About from './Screens/About'
 import {
   BrowserRouter, Routes,
   Route,
 } from "react-router-dom";
+
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
         <Route exact path="/RadioButton" element={<RadioButton/>} />
         <Route exact path="/Textfield" element={<Textfield/>} />
         <Route exact path="/Search" element={<Search/>} />
+        <Route exact path="/About" element={<About/>} />
       </Routes>
     </BrowserRouter>
   </>

@@ -37,7 +37,7 @@ const Buttons = () => {
         <div className='background-content' style={{ margin: '0 1rem' }}>
           <h1 style={{ textAlign: 'center', padding: '1rem', }}>Buttons</h1>
           <p style={{textAlign:'right', padding:'0 2rem 0 0', fontWeight:'600', fontStyle:'italic'}}>For code click on the component you like!</p>
-          <ImageList sx={{ width: '83vw', height: '77vh', }} cols={3} >
+          <ImageList sx={{ width: '83vw', height: '76vh', }} cols={3} >
             {itemData.map((item) => (
               <ImageListItem key={item.img} style={{padding:'1rem'}}>
                 <img style={{ cursor: 'pointer', height:'250px', }}
